@@ -26,7 +26,7 @@ h1 {
     text-align: center;
     font-weight: normal;
     color: white;
-    background: steelblue;
+    /* background: rgb(179, 0, 0); */
     margin: 0;
     text-transform: uppercase;
     padding: 20px 0;

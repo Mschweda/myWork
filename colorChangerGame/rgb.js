@@ -21,6 +21,7 @@ for(let i = 0; i < modeButtons.length; i++){
         reset();
     });
 }
+
 for(let i = 0; i < squares.length; i++){
     //add click listeners to squares
     squares[i].addEventListener("click", function(){
@@ -31,7 +32,7 @@ for(let i = 0; i < squares.length; i++){
         messageDisplay.textContent = "Correct"
         resetButton.textContent = "Play Again?"
         changeColors(clickedColor);
-        h1.style.background = clickedColor;
+        h1.style.backgroundColor = clickedColor;
         } else {
         this.style.background = "#232323";
         messageDisplay.textContent = "Try Again!"
