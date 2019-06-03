@@ -11,6 +11,92 @@
     <title>Bootstrap 4!</title>
 </head>
 <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-info">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+              <!-- flex jumbotron -->
+    <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">Hello, Marisa!</h1>
+                <p class="lead d-none d-md-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid ullam laudantium illo totam adipisci quos molestiae illum laboriosam doloribus. Quisquam voluptas repellendus sint dolor, architecto expedita explicabo? Cupiditate, fuga quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ut iste saepe dolore hic pariatur laudantium soluta vero aut, explicabo, cumque ducimus quos alias omnis fugiat praesentium mollitia, totam ratione!</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </div>
+    </div>
+              <!-- d-flex justify-content-center/justify-content-end/justify-content-between/justif-content-around -->
+    <div class="container">
+        <h1 class="text-center display-4">Flexbox</h1>
+        <div class="border border-dark d-flex justify-content-around">
+            <button class="btn btn-info btn-lg">Large</button>
+            <button class="btn btn-warning">Small</button>
+        </div>
+    
+            <!-- d-flex <align-items-center/align-items-end/align-items-start/align-items-baseline/align-items-stretch -->
+    
+            <div class="border border-dark d-flex justify-content-center align-items-center"style="height: 100px">
+                <button class="btn btn-info btn-lg">Large</button>
+                <button class="btn btn-warning btn-sm">Small</button>
+                <button class="btn btn-primary">Small</button>
+            </div>
+            <!-- flex-column -->
+            <div class="border border-dark d-flex flex-column justify-content-center"style="height: 200px">
+                <button class="btn btn-info btn-lg">Large</button>
+                <button class="btn btn-warning btn-sm">Small</button>
+                <button class="btn btn-primary">Small</button>
+            </div>
+            <!-- responsiveness -->
+            <h1 class="display-4 text-center">Responsiveness</h1>
+            <div class="d-flex flex-column flex-md-row justify-content-between">
+                <button class="btn btn-dark btn-lg">Link</button>
+                <button class="btn btn-dark btn-lg">Link</button>
+                <button class="btn btn-dark btn-lg">Link</button>
+                <button class="btn btn-dark btn-lg">Link</button>
+                <button class="btn btn-dark btn-lg">Link</button>
+            </div>
+    </div>
+
+     <!-- Display inline or block with responsiveness -->
+    <div class="container">
+        <hi class="text-center display-4">Display Utility</hi>
+        <hi class="border border-danger d-inline">HELLO</hi>
+        <span class="border border-success d-block">Hello</span>
+        <hi class="d-xl-none">Hide me on XL</hi>
+        <hi class="d-none d-lg-block d-xl-none">Always hidden except on large</hi>
+    </div>
+    <!-- text colors -->
     <div class ="container">
         <h1 class="text-primary">I am H1!</h1>
         <h1 class="text-danger">I am H1!</h1>
@@ -18,20 +104,23 @@
         <h1 class="text-info">I am H1!</h1>
         <h1 class="text-dark bg-light">I am H1!</h1>
     </div>
+    <!-- heading sizes -->
     <div class="container">
-            <p class="h1">h1. Bootstrap heading</p>
-            <p class="h2">h2. Bootstrap heading</p>
-            <p class="h3">h3. Bootstrap heading</p>
-            <p class="h4">h4. Bootstrap heading</p>
-            <p class="h5">h5. Bootstrap heading</p>
-            <p class="h6">h6. Bootstrap heading</p>
-    </div>
+        <p class="h1">h1. Bootstrap heading</p>
+        <p class="h2">h2. Bootstrap heading</p>
+        <p class="h3">h3. Bootstrap heading</p>
+        <p class="h4">h4. Bootstrap heading</p>
+        <p class="h5">h5. Bootstrap heading</p>
+        <p class="h6">h6. Bootstrap heading</p>
+</div>
+    <!-- display sizes -->
     <div class="container">
-            <h1 class="display-1">Display 1</h1>
-            <h1 class="display-2">Display 2</h1>
-            <h1 class="display-3">Display 3</h1>
-            <h1 class="display-4">Display 4</h1>
+        <h1 class="display-1">Display 1</h1>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
     </div>
+    <!-- padding -->
     <div class="container">
         <button class="btn btn-info">PADDING</button>
         <button class="btn btn-info p-0"> NO PADDING</button>
@@ -44,10 +133,12 @@
         <button class="btn btn-info pb-5"> 5 PADDING BOTTOM</button>
         <button class="btn btn-info py-5"> 5 top&bottom</button>
         <button class="btn btn-info px-5"> 5 left&right</button>
+        <!-- margins -->
         <p class="bg-success text-white m-0">I am Margin-0</p>
         <p class="bg-success text-white m-1">I am Margin-1</p>
         <p class="bg-success text-white my-2">I am Margin-2</p>
         <p class="bg-success text-white mx-3">I am Margin-3</p>
+        <!-- blockquotes -->
             <blockquote class="blockquote">
                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
             </blockquote>
